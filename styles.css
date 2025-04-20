@@ -1,0 +1,21 @@
+.carousel-box {
+  height: 30vh;
+  /* padding-left: 10px;
+  padding-top: 10px; */
+}
+
+.img-install {
+  max-width: 60vw;
+}
+
+.card-img {
+  height: 130px;
+}
+
+.card-spinner {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

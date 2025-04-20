@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
   <!-- agregar switch dark mode -->
   <head>
     <meta charset="UTF-8" />
@@ -11,11 +11,12 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-secondary pl-6">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Introducción a Bootstrap</a>
+        <a class="navbar-brand ms-4" href="#">Introducción al UI y Bootstrap</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,22 +29,104 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <button>Agregar switch</button>
     </nav>
-    <main>
-      <h2 class="mt-4">Carousel</h2>
-      <p>Introdducción basica a que es bootstrap</p>
+    <main class="container">
+      <h2 class="mt-4 mb-3">Introducción al UI</h2>
       <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img1.png" class="d-block w-100" alt="..." />
+            <div class="carousel-box">
+              <h4>¿Qué es el diseño UI?</h4>
+              <p>
+                La expresión UI viene de User Interface, que significa Interfaz
+                del Usuario. La idea del UI es guiar al usuario por tu
+                aplicación durante el tiempo que él la usa.
+              </p>
+              <p>
+                Utilizaremos el mismo ejemplo que acabamos de ver para facilitar
+                la explicación.
+              </p>
+              <p>
+                En el momento que una persona entra en tu sitio web, existen
+                algunas acciones específicas que deseas que ellas tomen.
+              </p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="img3.png" class="d-block w-100" alt="..." />
+            <div class="carousel-box">
+              <h4>3 diferencias fundamentales entre diseño UI y UX</h4>
+              <p><b>UI solo existe con un interfaz visual</b>, UX no</p>
+              <p>
+                <b>UI direcciona al usuario</b>, UX hace la navegación valer la
+                pena
+              </p>
+              <p><b>UI es sobre razón</b>, UX es sobre emoción</p>
+            </div>
           </div>
-          <!-- <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div> -->
+          <div class="carousel-item">
+            <div class="carousel-box">
+              <h4>Cuales son los tipos de interfaz de UI?</h4>
+              <p>
+                <b>Interfaz gráfica de usuario (GUI)</b>
+                , utiliza elementos como ventanas, iconos y menús para fomentar
+                la interacción
+              </p>
+              <p>
+                <b>Interfaz de linea de comandos (CLI)</b>
+                permite a los usuarios interactuar con el sistema usando
+                comandos de texto
+              </p>
+              <p>
+                <b>Interfaz de usuario basada en gestos</b>
+                recurre a gestios manuales como los que se realizan en pantallas
+                táctiles.
+              </p>
+              <p>
+                <b>Interacción mediante comandos de voz</b>
+                como la que se emplea en asistentes como Siri o Alexa
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-box">
+              <h4>Que compone la UI?</h4>
+              <p>
+                <b>Elementos visuales</b>
+                botones, menús o iconós que facilitan la interacción.
+              </p>
+              <p>
+                <b>Diseño de la navegación</b>
+                , es la estructura que permite a los usuarios mvoerse facilmente
+                por el sistema o aplicación.
+              </p>
+              <p>
+                <b>Layouts y grids</b>
+                , permiten la organización visual, facilitando la colocación de
+                los elementos en la pantalla.
+              </p>
+              <p>
+                <b>Tipografías y colores</b>
+                , que mejoran la legibilidad y la estética del diseño.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-box">
+              <h4>Características de una buena UI</h4>
+              <p>
+                La UI debe permitir a los usuarios comprender y utilizar la
+                inferzar sin dificultad
+              </p>
+              <p>
+                Debe ser usable en diferentes dispositivos, desde computadoras
+                hasta celulares
+              </p>
+              <p>
+                Deberá ser visualmente atractiva y mantener una coherencia en el
+                diseño
+              </p>
+            </div>
+          </div>
         </div>
         <button
           class="carousel-control-prev"
@@ -64,201 +147,315 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </main>
-    <section>
-      <h2>Acordeon</h2>
-      <p>Desarrollo de info larga</p>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseOne"
-              aria-expanded="true"
-              aria-controls="collapseOne"
-            >
-              Accordion Item #1
-            </button>
-          </h2>
-          <div
-            id="collapseOne"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is
-              shown by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-expanded="false"
-              aria-controls="collapseTwo"
-            >
-              Accordion Item #2
-            </button>
-          </h2>
-          <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseThree"
-              aria-expanded="false"
-              aria-controls="collapseThree"
-            >
-              Accordion Item #3
-            </button>
-          </h2>
-          <div
-            id="collapseThree"
-            class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample"
-          >
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <h2 class="mt-4">Cards</h2>
-      <p>
-        Agregar ejemplos de componentes, y dirigir a una url con un ejemplo de
-        codigo
-      </p>
-      <section class="d-flex justify-content-evenly">
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKz4XxFwjS4z2KcMX0MM1qJBlrUolimaj4w&s"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Launch demo modal
-            </button>
+      <section>
+        <h2 class="mt-4">Bootstrap</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Que es Boostrap?
+              </button>
+            </h2>
             <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionExample"
             >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      Modal title
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">...</div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Save changes
-                    </button>
+              <div class="accordion-body">
+                <p>
+                  Es un framework front-end de código abierto que facilita el
+                  diseño y desarrollo de sitios web y aplicaciones responsivas y
+                  móviles.
+                </p>
+                <p>
+                  Desarrollado originalmente dentro de Twitter, con el objetivo
+                  de crear una herramienta para mantener la coherencia de los
+                  diseños dentro de la compañía.
+                </p>
+                <p>Fue lanzado en 2011</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Para que sirve?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  Bootstrap sirve para diseñar sitios web modernos y responsivos
+                  más rápido, usando componentes y estilos listos para usar.
+                </p>
+                <p>
+                  Mantener consistencia visual en proyectos grandes o
+                  colaborativos, usando una base de diseño común.
+                </p>
+                <p>
+                  Para prototipar interfaces rápidamente, ideal en etapas
+                  tempranas de desarrollo.
+                </p>
+                <p>
+                  Permite aplicar estilos directamente desde el HTML usando
+                  clases predefinidas, sin necesidad de escribir CSS
+                  personalizado.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Caracteristicas principales
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>
+                  <b>Sistema de grillas:</b> Bootstrap incorpora un sistema de
+                  rejilla flexible y responsivo que permite organizar el
+                  contenido de forma estructurada a través de filas y columnas.
+                  Este sistema facilita la creación de layouts que se adaptan
+                  automáticamente a diferentes tamaños de pantalla
+                </p>
+                <p>
+                  <b> Componentes predefinidos (HTML + CSS): </b> Incluye una
+                  amplia variedad de componentes listos para usar (Botones,
+                  Formularios, Alertas)
+                </p>
+                <p>
+                  <b>Integración con JavaScript:</b> Incluye scripts que
+                  permiten funcionalidades como Menús desplegables, Carruseles
+                  de imágenes, Modales
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br />
+      <section class="mt-4 container text-center">
+        <h4 class="mb-2">Instalación de Bootstrap</h4>
+        <div class="row">
+          <div class="col">
+            <img src="img1boot.png" alt="" srcset="" class="img-install" />
+          </div>
+          <div class="col">
+            <img src="img2boot.png" alt="" srcset="" class="img-install" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="mt-4 mb-3">Ejemplos de componentes componentes</h2>
+
+        <section class="d-flex justify-content-evenly">
+          <div class="card" style="width: 18rem">
+            <img src="toasts.png" class="card-img-top card-img" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Alertas</h5>
+              <p class="card-text">
+                Proporciona mensajes de retroalimentación contextuales para las
+                acciones típicas del usuario con los útiles y flexibles mensajes
+                de alerta disponibles.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Launch demo modal
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        test
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKz4XxFwjS4z2KcMX0MM1qJBlrUolimaj4w&s"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card" style="width: 18rem">
+            <img class="card-img" src="button.jpg" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Botones</h5>
+              <p class="card-text">
+                Usa los estilos de botones personalizados de Bootstrap para
+                acciones en formularios, cuadros de diálogo y más con soporte
+                para múltiples tamaños, estados y más.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Launch demo modal
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Modal title
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">Angelo</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card" style="width: 18rem">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKz4XxFwjS4z2KcMX0MM1qJBlrUolimaj4w&s"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+          <div class="card" style="width: 18rem">
+            <!-- <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZKz4XxFwjS4z2KcMX0MM1qJBlrUolimaj4w&s"
+              class="card-img-top"
+              alt="..."
+            /> -->
+            <div class="spinner-border card-spinner" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Spinners</h5>
+              <p class="card-text">
+                Indica el estado de carga de un componente o página con
+                controles giratorios Bootstrap, construidos completamente con
+                HTML, CSS y sin JavaScript.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Launch demo modal
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Spinners
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">test</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
       </section>
-    </section>
-    <footer class="bg-dark text-white text-center py-4">
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-4">
       <p>
         &copy; 2025 Mi Demo | <a href="#" class="text-white">Facebook</a> |
         <a href="#" class="text-white">Twitter</a>
