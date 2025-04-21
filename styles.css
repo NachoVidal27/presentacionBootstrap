@@ -19,3 +19,24 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+section {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid lightgray;
+  margin: auto;
+}
+
+section:last-child {
+  border: none;
+}
+
+#navTitle {
+  font-size: 2rem;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
